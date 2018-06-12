@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Instagram Clone</string>
+    <string name="botao_login">Login</string>
+    <string name="edit_senha_hint">Digite sua senha</string>
+    <string name="edit_nome_hint">Digite seu nome</string>
+    <string name="edit_usuario">Digite seu usuário</string>
+    <string name="edit_email_hint">Digite seu E-Mail</string>
 </resources>

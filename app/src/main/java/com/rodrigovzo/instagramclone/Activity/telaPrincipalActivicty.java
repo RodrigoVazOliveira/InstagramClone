@@ -1,7 +1,9 @@
-package com.rodrigovzo.instagramclone;
+package com.rodrigovzo.instagramclone.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.rodrigovzo.instagramclone.R;
 
 public class telaPrincipalActivicty extends AppCompatActivity {
 
