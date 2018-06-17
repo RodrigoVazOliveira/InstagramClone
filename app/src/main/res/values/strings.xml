@@ -5,4 +5,7 @@
     <string name="edit_nome_hint">Digite seu nome</string>
     <string name="edit_usuario">Digite seu usuário</string>
     <string name="edit_email_hint">Digite seu E-Mail</string>
+    <string name="configuracaoes">Configurações</string>
+    <string name="actionSair">Sair</string>
+    <string name="actionCompartilhar">Compartilhar</string>
 </resources>

@@ -29,7 +29,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/logo"
+            android:background="@drawable/logo"
             tools:layout_editor_absoluteX="25dp"
             tools:layout_editor_absoluteY="35dp" />
 
@@ -76,8 +76,8 @@
             android:id="@+id/textViewCriarConta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/buttonLogin"
+            android:onClick="abrirCadatroUsuario"
             android:text="Não tem uma conta? Crie uma" />
 
 
