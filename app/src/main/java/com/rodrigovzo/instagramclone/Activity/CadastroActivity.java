@@ -77,7 +77,7 @@ public class CadastroActivity extends AppCompatActivity {
                             }else {
                                 ParseErros erros = new ParseErros();
                                 Toast.makeText(CadastroActivity.this,
-                                                erros.getErro(e.getCode()),
+                                                e.getMessage(),
                                             Toast.LENGTH_LONG).show();
                             }
 

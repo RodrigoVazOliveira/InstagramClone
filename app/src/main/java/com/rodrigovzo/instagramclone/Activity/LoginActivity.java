@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
@@ -19,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginUsuario;
     private EditText senhaUsuario;
     private Button btnLogin;
+    private TextView criarCadastro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         loginUsuario = findViewById(R.id.editTextUsuario);
         senhaUsuario = findViewById(R.id.editTextSenha);
         btnLogin     = findViewById(R.id.buttonLogin);
+        criarCadastro   = findViewById(R.id.textViewCriarConta);
 
         // verificar se o usuário está ligado.
         verificarUsuarioLogado();
@@ -39,6 +42,13 @@ public class LoginActivity extends AppCompatActivity {
                     String usuario = loginUsuario.getText().toString();
                     String senha   = senhaUsuario.getText().toString();
                     verificarLogin(usuario, senha);
+                }
+            });
+
+            criarCadastro.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    abrirCadatroUsuario();
                 }
             });
 
@@ -70,7 +80,7 @@ public class LoginActivity extends AppCompatActivity {
         finish(); // finilizar a tela de login
     }
 
-    private void abrirCadatroUsuario( View view ){
+    private void abrirCadatroUsuario(){
         Intent intent = new Intent(LoginActivity.this, CadastroActivity.class);
         startActivity(intent);
     }

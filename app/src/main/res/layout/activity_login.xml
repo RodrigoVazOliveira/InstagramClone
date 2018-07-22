@@ -77,7 +77,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/buttonLogin"
-            android:onClick="abrirCadatroUsuario"
             android:text="Não tem uma conta? Crie uma" />
 
 

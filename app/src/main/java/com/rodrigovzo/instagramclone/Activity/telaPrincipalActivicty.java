@@ -22,6 +22,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.rodrigovzo.instagramclone.Adapter.TabsAdapter;
+import com.rodrigovzo.instagramclone.Fragments.HomeFragment;
 import com.rodrigovzo.instagramclone.R;
 import com.rodrigovzo.instagramclone.Util.SlidingTabLayout;
 
@@ -132,6 +133,11 @@ public class telaPrincipalActivicty extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),
                                         "Sua imagem foi postada com sucesso!",
                                     Toast.LENGTH_LONG).show();
+
+                            TabsAdapter tabsAdapterNovo = (TabsAdapter) viewPager.getAdapter();
+                            HomeFragment  nomeFragmentNovo = (HomeFragment) tabsAdapterNovo.getFragment(0);
+                            nomeFragmentNovo.atualizaPostagens();
+
                         }else {
                             Toast.makeText(getApplicationContext(),
                                     "Ocorreu um erro na postagem! " + e.getMessage(),
