@@ -34,6 +34,7 @@ public class HomeAdapter extends ArrayAdapter<ParseObject> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
         View view = convertView;
 
 
